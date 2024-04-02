@@ -13,6 +13,7 @@ import Login from "../MainLogin/Login";
 import Signup from "../MainLogin/Signup";
 import LoginBtn from "../../Components/LoginBtn";
 import HomePageBtn from "../../Components/HomePageBtn";
+import GarageOwner from "../GarageOwner/GarageOwner";
 function Home() {
   useEffect(() => {
     Aos.init();
@@ -80,6 +81,8 @@ function Home() {
           <br></br>
           <br></br>
           <br></br>
+      <GarageOwner/>
+
         </div>
       </div>
     </div>

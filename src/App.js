@@ -8,20 +8,24 @@ import Service from "./Pages/Service page/Service";
 import HomePageBtn from "./Components/HomePageBtn";
 import Navgation from "./Components/Navbar/Navgation";
 import { BrowserRouter , Routes , Route } from "react-router-dom";
-
+import GarageOwner from "./Pages/GarageOwner/GarageOwner";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-      <Routes>
+    
+       <BrowserRouter>
+      {/* <Routes>
         <Route index element ={<Home/>}/>
         <Route path="/home" element ={<Home/>} />
         <Route path="/login" element ={<Login/>} />
         <Route path="/signup" element ={<Signup/>} />
         <Route path="/service" element ={<Service/>} />
-      </Routes>
-      </BrowserRouter>
+      </Routes>  */}
+      <GarageOwner/>
+      </BrowserRouter> 
+       
+      
     </div>
   );
 }
