@@ -7,7 +7,8 @@ code {
 
   }
 .welcoming{
-    text-align: left;
+    text-align: center;
+    padding-right: 190px;
     padding-left: 200px;
     font-weight: 600;
 }
@@ -18,174 +19,303 @@ code {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap");
-body {
-  font-family: "Oswald", sans-serif;
-  background-color: #212121;
-}
-body section {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  display:grid;
-  gap: 50px;
-  grid-template-columns: repeat(3, 1fr);
+.remote{
   
+  background-color: white;
+  padding: 1em;
+  padding-bottom: 1.1em;
+  border-radius: 15px;
+  margin: 1em;
+  width: 500px;
+  height: 280px;
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%,-30%);
 }
-
-
-.card {
-    
-  position: relative;
-  height: 400px;
-  width: 100%;
-  margin: 10px 0;
-  transition: ease all 2.3s;
-  perspective: 1200px;
-  display: flex;
-  flex-wrap: wrap; 
-  padding: 10px;
+.capacity{
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
 }
-.card:hover .cover {
-  transform: rotateX(0deg) rotateY(-180deg);
-}
-.card:hover .cover:before {
-  transform: translateZ(30px);
-}
-.card:hover .cover:after {
-  background-color: black;
-}
-.card:hover .cover h1 {
-  transform: translateZ(100px);
-}
-.card:hover .cover .price {
-  transform: translateZ(100px);
-}
-.waitingicon{
-    width: 35px;
-}
-.card:hover .cover a {
-  transform: translateZ(-60px) rotatey(-180deg);
-}
-.card .cover {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  transform-style: preserve-3d;
-  transition: ease all 2.3s;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.card .cover:before {
-  content: "";
-  position: absolute;
-  border: 5px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  z-index: 2;
-  transition: ease all 2.3s;
-  transform-style: preserve-3d;
-  transform: translateZ(0px);
-}
-.card .cover:after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 2;
-  transition: ease all 1.3s;
-  background: rgba(0, 0, 0, 0.4);
-}
-.card .cover.item-a {
-    background-image: url("C:\Users\97059\Desktop\ParkingSenior\EasyPark\src\Pages\GarageOwner\Photos\download (4).jpeg");
-}
-.card .cover.item-b {
-    background-image: url("C:\Users\97059\Desktop\ParkingSenior\EasyPark\src\Pages\GarageOwner\Photos\download.jpeg");
-}
-.card .cover.item-c {
-  background-image: url("C:\Users\97059\Desktop\ParkingSenior\EasyPark\src\Pages\GarageOwner\Photos\download (3).jpeg");
-}
-.card .cover h1 {
-  font-weight: 600;
-  position: absolute;
-  bottom: 55px;
-  left: 50px;
-  color: white;
-  transform-style: preserve-3d;
-  transition: ease all 2.3s;
-  z-index: 3;
-  font-size: 3em;
-  transform: translateZ(0px);
-}
-.card .cover .price {
-  font-weight: 200;
-  position: absolute;
-  top: 55px;
-  right: 50px;
-  color: white;
-  transform-style: preserve-3d;
-  transition: ease all 2.3s;
-  z-index: 4;
-  font-size: 2em;
-  transform: translateZ(0px);
-}
-.card .cover .resID{
-    font-weight: 200;
-    position: absolute;
-    bottom: 5px;
-    left: 55px;
-    color:beige;
-    transform-style: preserve-3d;
-    transition: ease all 2.3s;
-    z-index: 4;
-    font-size: 2em;
-    transform: translateZ(0px);
-}
-.card .card-back {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: #0b0f08;
-  transform-style: preserve-3d;
-  transition: ease all 2.3s;
-  transform: translateZ(-1px);
+.sss{
   display: flex;
   align-items: center;
+  justify-content: start;
+align-self: center;
+padding-left: 172px;
+padding-bottom: 40px;
+}
+.status{
+  color: black;
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight: 600;
+
+}
+
+/* */
+
+.toggle-wrapper {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+  padding: 0.125em;
+  background-image: linear-gradient(to bottom, #d5d5d5, #e8e8e8);
+  box-shadow: 0 1px 1px rgb(255 255 255 / 0.6);
+  font-size: 1.5em;
+
 }
-.card .card-back a {
-  transform-style: preserve-3d;
-  transition: ease transform 2.3s, ease background 0.5s;
-  transform: translateZ(-1px) rotatey(-180deg);
-  background: transparent;
-  border: 1px solid white;
-  font-weight: 200;
-  font-size: 1.3em;
-  color: white;
-  padding: 14px 32px;
+
+.toggle-checkbox {
+  display: flex;
+  appearance: none;
+  position: absolute;
+  z-index: 1;
+  border-radius: inherit;
+  font: inherit;
+  opacity: 0;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 0.375em;
+  width: 3em;
+  height: 1.5em;
+  background-color: #e8e8e8;
+  box-shadow: inset 0 0 0.0625em 0.125em rgb(255 255 255 / 0.2),
+    inset 0 0.0625em 0.125em rgb(0 0 0 / 0.4);
+  transition: background-color 0.4s linear;
+}
+
+.toggle-checkbox:checked + .toggle-container {
+  background-color: lime;
+}
+
+.toggle-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0.0625em;
+  border-radius: 0.3125em;
+  width: 1.375em;
+  height: 1.375em;
+  background-color: #e8e8e8;
+  box-shadow: inset 0 -0.0625em 0.0625em 0.125em rgb(0 0 0 / 0.1),
+    inset 0 -0.125em 0.0625em rgb(0 0 0 / 0.2),
+    inset 0 0.1875em 0.0625em rgb(255 255 255 / 0.3),
+    0 0.125em 0.125em rgb(0 0 0 / 0.5);
+  transition: left 0.4s;
+}
+
+.toggle-checkbox:checked + .toggle-container > .toggle-button {
+  left: 1.5625em;
+}
+
+.toggle-button-circles-container {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  gap: 0.125em;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.toggle-button-circle {
+  border-radius: 50%;
+  width: 0.125em;
+  height: 0.125em;
+  background-image: radial-gradient(circle at 50% 0, #f5f5f5, #c4c4c4);
+}
+
+
+
+
+
+/*------------------------------*/
+.increase{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+align-self: center;
+padding-left: 100px;
+}
+
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3), 4px 7px 15px rgba(0, 0, 0, 0.2),
+    9px 15px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  max-width: 360px;
+}
+
+.butto,input {
   outline: none;
-  text-decoration: none;
+  border: none;
+  padding: 16px;
+  font-size: 18px;
 }
-.card .card-back a:hover {
+
+input {
+  width: 100%;
+  text-align: center;
+}
+
+.butto {
+  cursor: pointer;
+}
+.butto:nth-last-child(1) {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color:chartreuse;
+
+}
+.butto:nth-child(1) {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color:crimson;
+
+}
+
+.butto:hover {
+  background-color: #e6e6e6;
+}
+.butto:nth-last-child(1):active {
+  box-shadow: inset -4px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.butto:nth-child(1):active {
+  box-shadow: inset 4px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.capacity{
+color: black;
+font-size: 20px;
+}
+/*  sssssssssssssssssssssssssssss*/
+
+.requests {
   background-color: white;
-  color: #0b0f08;
+  padding: 1em;
+  padding-bottom: 1.1em;
+  border-radius: 15px;
+  margin: 1em;
+  width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%,-30%);
+}
+
+
+.user {
+  display: flex;
+  flex-direction: row;
+  height: 4em;
+  padding-left: 1em;
+  padding-right: 1em;
+  transform: rotate(180deg);
+  justify-content: right;
+  border-radius: 10px;
+  transition: .4s ease-in-out;
+}
+
+.user:hover {
+  background-color: lightgray;
+}
+
+.header {
+  display: flex;
+  margin: 1em;
+}
+
+
+.heading {
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+  align-content: center;
+  padding-right: 31px;
+}
+
+
+
+
+
+.albumcover {
+  position: relative;
+  margin-right: 1em;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(233, 232, 232);
+  align-self: center;
+  border-radius: 5px;
+
+}
+
+.userinfo {
+  position: relative;
+  transform: rotate(180deg);
+  margin-right: 1em;
+  color: black;
+  align-self: center;
+  display: inline-flex;
+}
+.icon{
+  color: #00041a;
+  font-size: 48px;
+  transform: rotate(180deg);
+}
+.artist {
+  font-size: 0.6em;
+}
+.buttons{
+  display:inline-flex;
+  padding-left: 30px;
+  
+}
+.Abutt{
+  font-size: 15px;
+  background-color: transparent;
+  border: 0cap;
+  color: green;
+  cursor: pointer;
+
+
+}
+.Rbutt{
+  font-size: 15px;
+  background-color: transparent;
+  border: 0cap;
+  color: red;
+  cursor: pointer;
+
+}
+.name{
+  font-weight: 700;
+padding-left: 0px;
+font-size: 20px;
+padding-top:5px;
+}
+@keyframes move6 {
+  0% {
+    height: 0.2em;
+  }
+
+  25% {
+    height: 0.7em;
+  }
+
+  50% {
+    height: 1.5em;
+  }
+
+  100% {
+    height: 0.2em;
+  }
 }

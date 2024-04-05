@@ -1,10 +1,13 @@
 import React from 'react'
 import Navgation from '../../Components/Navbar/Navgation'
 import './GarageOwner.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSquareParking } from '@fortawesome/free-solid-svg-icons'
+
 
 function GarageOwner() {
   let GouserName = "GarageOwnerName";
-  let NameOfRes ="UserN";
+  let username ="UserName";
   let numberOfRes ="9521";
 
   return (
@@ -22,122 +25,220 @@ function GarageOwner() {
       </div>
       
 
-
-
-
-      <section className='requests'>
-      <div class="card">
-        <div class="cover item-a">
-          <h1>{NameOfRes}</h1>
-          <p className='resID'>+{numberOfRes}</p>
-          <span class="price"><img src="https://th.bing.com/th/id/R.fb134020eac5a368036b69bb302580d5?rik=6CTKBS0mwrq%2b8w&pid=ImgRaw&r=0" alt="" className='waitingicon'/></span>
-          <div class="card-back">
-            <a href="#" className='reject'>Reject</a>
-            <a href="#" className='accept'>Accept</a>
-          </div>
+      <div className="requests">
+  <div class="header">
+    <p class="heading">Waiting Users</p>
+  </div>
+  <div class="user">
+    <div class="userinfo">
+      <p class="name">{username}</p>
+      <div className='buttons'>
+        <button className='Abutt'>Accept</button>
+        <button className='Rbutt'>Reject</button>
         </div>
-      </div>
+
+    </div>
+       <div className="albumcover">
+  <FontAwesomeIcon icon={faSquareParking} className='icon' />
+</div>
+
+  </div>
+  <div class="user">
+    <div class="userinfo">
+      <p class="name">{username}</p>
+      <div className='buttons'>
+        <button className='Abutt'>Accept</button>
+        <button className='Rbutt'>Reject</button>
+        </div>
+    </div>
+    <div className="albumcover">
+  <FontAwesomeIcon icon={faSquareParking} className='icon' />
+</div>
+  </div>
+  <div class="user">
+    <div class="userinfo">
+      <p class="name">{username}</p>
+      <div className='buttons'>
+        <button className='Abutt'>Accept</button>
+        <button className='Rbutt'>Reject</button>
+        </div>
+    </div>
+    <div className="albumcover">
+  <FontAwesomeIcon icon={faSquareParking} className='icon' />
+</div>
+  </div>
+</div>
 
 
 
-      <div class="card">
-        <div class="cover item-c">
-          <h1>{NameOfRes}</h1>
-          <p className='resID'>+{numberOfRes}</p>
-          <span class="price"><img src="https://th.bing.com/th/id/R.fb134020eac5a368036b69bb302580d5?rik=6CTKBS0mwrq%2b8w&pid=ImgRaw&r=0" alt="" className='waitingicon'/></span>
-          <div class="card-back">
-            <a href="#">Reject</a>
-            <a href="#">Accept</a>
+
+
+
+
+
+
+      <div className="requests">
+  <div class="header">
+    <p class="heading">Waiting Users</p>
+  </div>
+  <div class="user">
+    <div class="userinfo">
+      <p class="name">{username}</p>
+      <div className='buttons'>
+        <button className='Abutt'>Accept</button>
+        <button className='Rbutt'>Reject</button>
+        </div>
+
+    </div>
+       <div className="albumcover">
+  <FontAwesomeIcon icon={faSquareParking} className='icon' />
+</div>
+
+  </div>
+  <div class="user">
+    <div class="userinfo">
+      <p class="name">{username}</p>
+      <div className='buttons'>
+        <button className='Abutt'>Accept</button>
+        <button className='Rbutt'>Reject</button>
+        </div>
+    </div>
+    <div className="albumcover">
+  <FontAwesomeIcon icon={faSquareParking} className='icon' />
+</div>
+  </div>
+  <div class="user">
+    <div class="userinfo">
+      <p class="name">{username}</p>
+      <div className='buttons'>
+        <button className='Abutt'>Accept</button>
+        <button className='Rbutt'>Reject</button>
+        </div>
+    </div>
+    <div className="albumcover">
+  <FontAwesomeIcon icon={faSquareParking} className='icon' />
+</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className="requests">
+  <div class="header">
+    <p class="heading">Waiting Users</p>
+  </div>
+  <div class="user">
+    <div class="userinfo">
+      <p class="name">{username}</p>
+      <div className='buttons'>
+        <button className='Abutt'>Accept</button>
+        <button className='Rbutt'>Reject</button>
+        </div>
+
+    </div>
+       <div className="albumcover">
+  <FontAwesomeIcon icon={faSquareParking} className='icon' />
+</div>
+
+  </div>
+  <div class="user">
+    <div class="userinfo">
+      <p class="name">{username}</p>
+      <div className='buttons'>
+        <button className='Abutt'>Accept</button>
+        <button className='Rbutt'>Reject</button>
+        </div>
+    </div>
+    <div className="albumcover">
+  <FontAwesomeIcon icon={faSquareParking} className='icon' />
+</div>
+  </div>
+  <div class="user">
+    <div class="userinfo">
+      <p class="name">{username}</p>
+      <div className='buttons'>
+        <button className='Abutt'>Accept</button>
+        <button className='Rbutt'>Reject</button>
+        </div>
+    </div>
+    <div className="albumcover">
+  <FontAwesomeIcon icon={faSquareParking} className='icon' />
+</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className="remote">
+  <div class="header">
+    <p class="heading">Here Is Your Remote</p>
+  </div>
+
+  <div className='sss'>
+    <p className='status'>Status</p>
+    <div class="toggle-wrapper">
+      <input type="checkbox" class="toggle-checkbox" />
+      <div class="toggle-container">
+        <div class="toggle-button">
+          <div class="toggle-button-circles-container">
+            <div class="toggle-button-circle"></div>
+            <div class="toggle-button-circle"></div>
+            <div class="toggle-button-circle"></div>
+            <div class="toggle-button-circle"></div>
+            <div class="toggle-button-circle"></div>
+            <div class="toggle-button-circle"></div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+  <div className='increase'>
+<div className='input-group'>
+  <button className='butto' id="decrement">-</button>
+  <input type="number" id="input" value="1" readonly/>
+  <button className='butto' id="increment">+</button>
+</div>
+</div>
 
 
 
-
-
-      <div class="card">
-        <div class="cover item-b">
-          <h1>{NameOfRes}</h1>
-          <p className='resID'>+{numberOfRes}</p>
-          <span class="price"><img src="https://th.bing.com/th/id/R.fb134020eac5a368036b69bb302580d5?rik=6CTKBS0mwrq%2b8w&pid=ImgRaw&r=0" alt="" className='waitingicon'/></span>
-          <div class="card-back">
-            <a href="#">Reject</a>
-            <a href="#">Accept</a>
-          </div>
-        </div>
-      </div>
-
-
+</div>
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <div class="card">
-        <div class="cover item-c">
-          <h1>{NameOfRes}</h1>
-          <p className='resID'>+{numberOfRes}</p>
-          <span class="price"><img src="https://th.bing.com/th/id/R.fb134020eac5a368036b69bb302580d5?rik=6CTKBS0mwrq%2b8w&pid=ImgRaw&r=0" alt="" className='waitingicon'/></span>
-          <div class="card-back">
-            <a href="#" className='reject'>Reject</a>
-            <a href="#" className='accept'>Accept</a>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="card">
-        <div class="cover item-a">
-          <h1>{NameOfRes}</h1>
-          <p className='resID'>+{numberOfRes}</p>
-          <span class="price"><img src="https://th.bing.com/th/id/R.fb134020eac5a368036b69bb302580d5?rik=6CTKBS0mwrq%2b8w&pid=ImgRaw&r=0" alt="" className='waitingicon'/></span>
-          <div class="card-back">
-            <a href="#">Reject</a>
-            <a href="#">Accept</a>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-      <div class="card">
-        <div class="cover item-b">
-          <h1>{NameOfRes}</h1>
-          <p className='resID'>+{numberOfRes}</p>
-          <span class="price"><img src="https://th.bing.com/th/id/R.fb134020eac5a368036b69bb302580d5?rik=6CTKBS0mwrq%2b8w&pid=ImgRaw&r=0" alt="" className='waitingicon'/></span>
-          <div class="card-back">
-            <a href="#">Reject</a>
-            <a href="#">Accept</a>
-          </div>
-        </div>
-      </div>
-
-
-
-
-    
-</section>
-    
-
-    <section>
 
 
     <br />
@@ -153,7 +254,6 @@ function GarageOwner() {
 
     <br />
 
-    </section>
     </div>
   )
 }

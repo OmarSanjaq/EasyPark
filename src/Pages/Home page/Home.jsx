@@ -81,7 +81,6 @@ function Home() {
           <br></br>
           <br></br>
           <br></br>
-      <GarageOwner/>
 
         </div>
       </div>
